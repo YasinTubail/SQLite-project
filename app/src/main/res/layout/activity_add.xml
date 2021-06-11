@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#543855"
+    tools:context=".AddActivity">
+
+    <Button
+        android:id="@+id/add_button"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginTop="71dp"
+        android:text="إضافة"
+        android:textColor="#543855"
+        android:textSize="24sp"
+        app:backgroundTint="#E88D72"
+        app:layout_constraintEnd_toEndOf="@+id/num_studrnt_school"
+        app:layout_constraintStart_toStartOf="@+id/num_studrnt_school"
+        app:layout_constraintTop_toBottomOf="@+id/num_studrnt_school" />
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginTop="30dp"
+        android:text="للخلف"
+        android:textColor="#543855"
+        android:textSize="24sp"
+        app:backgroundTint="#E88D72"
+        app:layout_constraintEnd_toEndOf="@+id/add_button"
+        app:layout_constraintStart_toStartOf="@+id/add_button"
+        app:layout_constraintTop_toBottomOf="@+id/add_button" />
+
+    <EditText
+        android:id="@+id/num_phone_school"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="رقم الهاتف"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="#FF8882"
+        android:textColorHint="#FF8882"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@+id/address_school"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/address_school"
+        app:layout_constraintTop_toBottomOf="@+id/address_school" />
+
+    <EditText
+        android:id="@+id/num_studrnt_school"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="عدد طلاب المدرسة"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="#FF8882"
+        android:textColorHint="#FF8882"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@+id/num_phone_school"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/num_phone_school"
+        app:layout_constraintTop_toBottomOf="@+id/num_phone_school" />
+
+    <EditText
+        android:id="@+id/name_school"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="74dp"
+        android:ems="10"
+        android:hint="إسم المدرسة المهنية"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="#FF8882"
+        android:textColorHint="#FF8882"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/address_school"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:ems="10"
+        android:hint="عنوان المدرسة"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="#FF8882"
+        android:textColorHint="#FF8882"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@+id/name_school"
+        app:layout_constraintStart_toStartOf="@+id/name_school"
+        app:layout_constraintTop_toBottomOf="@+id/name_school" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="إضافة بيانات مدرسة مهنية"
+        android:textColor="#FF8882"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

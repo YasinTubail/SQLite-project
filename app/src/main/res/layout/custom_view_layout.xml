@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/button_delete"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/delete"
+        android:paddingTop="5dp"
+        app:backgroundTint="#F4B9B8"
+        app:layout_constraintStart_toStartOf="@+id/name_school_"
+        app:layout_constraintTop_toBottomOf="@+id/name_school_" />
+
+    <Button
+        android:id="@+id/button_inforamtion"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/information"
+        android:paddingTop="5dp"
+        app:backgroundTint="#F4B9B8"
+        app:layout_constraintBottom_toBottomOf="@+id/button_delete"
+        app:layout_constraintStart_toEndOf="@+id/button_delete"
+        app:layout_constraintTop_toBottomOf="@+id/name_school_"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.996"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/school" />
+
+    <TextView
+        android:id="@+id/name_school_"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="مدرسة قلقيلة الثانوية الصناعية"
+        android:textColor="#887BB0"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="1.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>
